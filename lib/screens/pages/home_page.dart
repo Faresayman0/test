@@ -77,16 +77,16 @@ class Home extends StatelessWidget {
                             imagePath: "asset/images/home/pngwing 2.png",
                             title: "Healthy Products"),
                         CustomProductWidget(
-                            onTap: () {},
-                            imagePath: "asset/images/home/pngwing 4.png",
-                            title: "Sport Materials"),
-                        CustomProductWidget(
                             onTap: () {
                               Navigator.of(context)
                                   .push(MaterialPageRoute(builder: (context) {
-                                return const SportWear();
+                                return const SportMaterial();
                               }));
                             },
+                            imagePath: "asset/images/home/pngwing 4.png",
+                            title: "Sport Materials"),
+                        CustomProductWidget(
+                            onTap: () {},
                             imagePath: "asset/images/home/imagesh.png",
                             title: "Sportswear"),
                       ],
