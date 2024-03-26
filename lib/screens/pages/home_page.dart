@@ -73,16 +73,16 @@ class Home extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         CustomProductWidget(
-                            onTap: () {
-                              Navigator.of(context)
-                                  .push(MaterialPageRoute(builder: (context) {
-                                return const HealthyProduct();
-                              }));
-                            },
+                            onTap: () {},
                             imagePath: "asset/images/home/pngwing 2.png",
                             title: "Healthy Products"),
                         CustomProductWidget(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.of(context)
+                                  .push(MaterialPageRoute(builder: (context) {
+                                return const SportMaterial();
+                              }));
+                            },
                             imagePath: "asset/images/home/pngwing 4.png",
                             title: "Sport Materials"),
                         CustomProductWidget(
